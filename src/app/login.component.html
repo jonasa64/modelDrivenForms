@@ -24,7 +24,7 @@
             <div *ngIf="form.controls.password.touched
 && form.controls.password.errors">
 
-                <div *ngIf="form.controls.password.errors.canNotContainSpace" class="alert alert-danger">
+                <div style="background-color:rgb(214, 51, 10);" *ngIf="form.controls.password.errors.canNotContainSpace" class="alert alert-danger alert alert-danger animated inifinite bounce delay-2s">
                     Password can not contain space
                 </div>
 
@@ -32,7 +32,7 @@
                     Username or Password is invalid
                 </div>
 
-                <div *ngIf="form.controls.password.errors.required" class="alert alert-danger">
+                <div style="background-color:rgb(214, 51, 10);" *ngIf="form.controls.password.errors.required" class="alert alert-danger animated inifinite bounce delay-2s">
                     Password is required
                 </div>
 
